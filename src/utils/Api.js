@@ -20,6 +20,10 @@ class Beers {
     return this.service.get('/random');
   }
 
+  getQuery() {
+    return this.service.get('/search?q=');
+  }
+
   addBeer(beer) {
     //axios.post('http://..../, {object})
     return this.service.post('/new', beer);
